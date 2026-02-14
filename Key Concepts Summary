@@ -1,0 +1,108 @@
+# Classical Control Systems – Key Concepts Summary
+
+## 1. Relay Logic Fundamentals
+Classical control systems are built using electromechanical relays and contactors.
+Control logic is implemented through:
+- Normally Open (NO) contacts
+- Normally Closed (NC) contacts
+- Auxiliary contacts
+- Latching (self-holding) circuits
+
+These systems form the foundation of modern PLC ladder logic.
+
+---
+
+## 2. Three-Phase Motor Control
+
+### Direct-On-Line (DOL)
+- Simplest motor starting method
+- Full line voltage applied directly to the motor
+- High starting current
+- Used for small to medium power motors
+
+### Forward / Reverse Control
+- Two contactors with electrical interlocking
+- Prevents simultaneous energizing
+- Direction controlled by phase sequence reversal
+
+### Star–Delta Starter
+- Reduces starting current
+- Motor starts in star configuration
+- Switches to delta after time delay
+- Requires timer relay and interlocking logic
+
+---
+
+## 3. Interlocking Mechanisms
+
+Interlocking ensures safe system operation.
+
+### Electrical Interlocking
+Uses auxiliary NC contacts to prevent conflicting contactors from energizing.
+
+### Mechanical Interlocking
+Physical blocking between contactors to prevent simultaneous activation.
+
+---
+
+## 4. Timer-Based Control
+
+Timers are used for:
+- Star–Delta transition delay
+- Sequential motor start
+- Delayed shutdown
+
+Common timer types:
+- ON-delay timer
+- OFF-delay timer
+
+---
+
+## 5. Sequential Motor Control
+
+Sequential logic ensures:
+- Controlled startup order
+- Load management
+- Process dependency handling
+
+Implemented using:
+- Timer relays
+- Auxiliary holding contacts
+- Interlocking paths
+
+---
+
+## 6. Protection Components
+
+Classical control systems include:
+- Thermal overload relay
+- Circuit breakers
+- Fuses
+- Emergency stop (E-Stop)
+
+Protection logic is always placed in series with control circuits.
+
+---
+
+## 7. Industrial Relevance
+
+Classical relay logic remains important because:
+- It is still used in heavy industries
+- It forms the conceptual basis of PLC ladder logic
+- Troubleshooting requires understanding physical control flow
+
+Mastering classical control improves:
+- Industrial automation readiness
+- Electrical schematic interpretation
+- Panel wiring logic
+- System-level safety awareness
+
+---
+
+## Engineering Reflection
+
+This course strengthened practical understanding of:
+- Control signal flow
+- Interlocking safety design
+- Real-world motor starter circuits
+- Transition from relay logic to PLC abstraction
